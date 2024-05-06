@@ -1,0 +1,43 @@
+.greetingDiv {
+    padding: 100px 50px;
+}
+
+.greetingText {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.greenText {
+    color: #70FF00;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.positionText {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.experienceDiv {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.experienceNo {
+    font-weight: 600;
+    font-size: 50px;
+    color: #4F4F4F;
+}
+
+.experienceText {
+    color: #828282;
+}
+
+.yearsOfExperienceDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-right: 50px;
+}

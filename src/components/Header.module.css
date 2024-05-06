@@ -1,0 +1,42 @@
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.icons {
+    height: 20px;
+    width: 20px;
+}
+
+.contactLink {
+    border-image: linear-gradient(#70ff00, #ffffff) 1;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 1px 5px;
+}
