@@ -3,9 +3,9 @@ import styles from "./GreetingSection.module.css";
 
 const GreetingSection = () => {
     return (
-        <div className={`${styles.greetingDiv} row`}>
-            <div className={`${styles.greetingLeftDiv} col-md-6`}>
-                <div className={`text_color ${styles.greetingText}`}>
+        <div className={`${styles.greetingDiv}`}>
+            <div className={`${styles.greetingLeftDiv}`}>
+                <div className={`white_text ${styles.greetingText}`}>
                     Hello, i am
                 </div>
                 <div className={`${styles.greenText}`}>
@@ -14,7 +14,7 @@ const GreetingSection = () => {
                 <div className={`${styles.greenText}`}>
                     Jain /&#62;
                 </div>
-                <div className={`text_color ${styles.positionText}`}>
+                <div className={`white_text ${styles.positionText}`}>
                     Fullstack Developer
                 </div>
                 <div className={`${styles.experienceDiv}`}>
@@ -34,7 +34,9 @@ const GreetingSection = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.greetingRightDiv}`}></div>
+            <div className={`${styles.greetingRightDiv}`}>
+                <img src='./main_img.png' alt='main_img' className={`${styles.mainImg}`} height={400} />
+            </div>
         </div>
     )
 }
