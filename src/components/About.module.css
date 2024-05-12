@@ -1,9 +1,6 @@
 .aboutDiv {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 120px;
-    padding-bottom: 100px;
+    padding: 0 120px 100px 120px;
 }
 
 .headingDiv {

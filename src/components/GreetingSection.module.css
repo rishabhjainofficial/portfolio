@@ -1,7 +1,4 @@
 .greetingDiv {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     padding: 100px 120px;
 }
 
@@ -43,4 +40,8 @@
     align-items: center;
     gap: 10px;
     padding-right: 50px;
+}
+
+.greetingRightDiv {
+    text-align: right;
 }

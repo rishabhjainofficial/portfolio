@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./Header.module.css";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsGitlab } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
 
 const Header = () => {
@@ -12,17 +12,17 @@ const Header = () => {
             <div className={`${styles.navDiv}`}>
                 <ul className="nav">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
+                        <a className="nav-link" aria-current="page" href="#about">
                             <div className={`${styles.navLink}`}>About</div>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="#skills">
                             <div className={`${styles.navLink}`}>Skills</div>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="#projects">
                             <div className={`${styles.navLink}`}>Projects</div>
                         </a>
                     </li>
@@ -31,15 +31,23 @@ const Header = () => {
             <div>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
+                        <a className="nav-link" aria-current="page" href="https://www.linkedin.com/in/rishabh-jain-a88176167/" target="_blank" rel="noreferrer">
                             <div className={`${styles.navLink}`}>
                                 <BsLinkedin />
                                 Linkedin
                             </div>
                         </a>
                     </li>
+                    {/* <li className="nav-item">
+                        <a className="nav-link" href="https://gitlab.com/rishabhwebanix" target="_blank" rel='noreferrer'>
+                            <div className={`${styles.navLink}`}>
+                                <BsGitlab />
+                                Gitlab
+                            </div>
+                        </a>
+                    </li> */}
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="https://github.com/rishabhjainofficial" target="_blank" rel='noreferrer'>
                             <div className={`${styles.navLink}`}>
                                 <BsGithub />
                                 Github
@@ -48,7 +56,7 @@ const Header = () => {
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">
-                            <div className={`${styles.navLink} ${styles.contactLink}`}>
+                            <div className={`${styles.navLink}`}>
                                 <BiMailSend className={`${styles.icons}`} />
                                 Contact me
                             </div>

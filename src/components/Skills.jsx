@@ -21,7 +21,7 @@ const Skills = () => {
         "ubuntu_icon",
     ];
     return (
-        <div className={`${styles.mainDiv}`}>
+        <div className={`${styles.mainDiv}`} id='skills'>
             <div className={`${styles.innerDiv}`}>
                 <div className={`${styles.headingDiv}`}>
                     <div className={`d-flex`}>

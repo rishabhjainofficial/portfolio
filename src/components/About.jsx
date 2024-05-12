@@ -17,8 +17,8 @@ const About = () => {
         }
     ];
     return (
-        <div className={`${styles.aboutDiv}`}>
-            <div className={`${styles.headingDiv}`}>
+        <div className={`${styles.aboutDiv} row`} id='about'>
+            <div className={`${styles.headingDiv} col-md-6`}>
                 <div className='d-flex'>
                     <p className={`${styles.heading} green_text`}>aboutMe</p>
                     <p className={`${styles.heading} white_text`}>( )</p>
@@ -29,7 +29,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className={`${styles.linkMainDiv}`}>
+            <div className={`${styles.linkMainDiv} col-md-6`}>
                 {data.map((item) => {
                     return (
                         <div className={`${styles.linkDiv}`} key={item.title}>
