@@ -3,7 +3,7 @@ import styles from "./GreetingSection.module.css";
 
 const GreetingSection = () => {
     return (
-        <div className={`row ${styles.greetingDiv}`}>
+        <div className={`row ${styles.greetingDiv}`} id='top'>
             <div className={`${styles.greetingLeftDiv} col-md-6`}>
                 <div className={`white_text ${styles.greetingText}`}>
                     Hello, i am
