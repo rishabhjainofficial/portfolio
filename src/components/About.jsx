@@ -17,30 +17,32 @@ const About = () => {
         }
     ];
     return (
-        <div className={`${styles.aboutDiv} row`} id='about'>
-            <div className={`${styles.headingDiv} col-md-6`}>
-                <div className='d-flex'>
-                    <p className={`${styles.heading} green_text`}>aboutMe</p>
-                    <p className={`${styles.heading} white_text`}>( )</p>
+        <div className={`${styles.aboutDiv} `} id='about'>
+            <div className="row">
+                <div className={`${styles.headingDiv} col-md-6`}>
+                    <div className='d-flex'>
+                        <p className={`${styles.heading} green_text`}>aboutMe</p>
+                        <p className={`${styles.heading} white_text`}>( )</p>
+                    </div>
+                    <div>
+                        <p className='white_text'>
+                            As a full-stack maestro with 5 years under my belt, I've woven my expertise into a tapestry of digital marvels. From sculpting CRM realms to orchestrating ERP symphonies, each project is a brushstroke of innovation. Whether crafting e-commerce escapades or sculpting learning platform odysseys, I blend front-end finesse with back-end wizardry to craft experiences that defy convention. With a toolbox brimming with the latest tech, I dance between frameworks and languages, driven by a relentless quest for excellence. In a world of code, I am the architect, the alchemist, and the storyteller, weaving dreams into digital reality.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p className='white_text'>
-                        As a full-stack maestro with 5 years under my belt, I've woven my expertise into a tapestry of digital marvels. From sculpting CRM realms to orchestrating ERP symphonies, each project is a brushstroke of innovation. Whether crafting e-commerce escapades or sculpting learning platform odysseys, I blend front-end finesse with back-end wizardry to craft experiences that defy convention. With a toolbox brimming with the latest tech, I dance between frameworks and languages, driven by a relentless quest for excellence. In a world of code, I am the architect, the alchemist, and the storyteller, weaving dreams into digital reality.
-                    </p>
-                </div>
-            </div>
-            <div className={`${styles.linkMainDiv} col-md-6`}>
-                {data.map((item) => {
-                    return (
-                        <div className={`${styles.linkDiv}`} key={item.title}>
-                            <div>
-                                <div className={`white_text`}>{item.title}</div>
-                                <div className={`green_text ${styles.link_title}`}>{item.link_title}</div>
+                <div className={`${styles.linkMainDiv} col-md-6`}>
+                    {data.map((item) => {
+                        return (
+                            <div className={`${styles.linkDiv}`} key={item.title}>
+                                <div>
+                                    <div className={`white_text`}>{item.title}</div>
+                                    <div className={`green_text ${styles.link_title}`}>{item.link_title}</div>
+                                </div>
+                                <div className={`green_text ${styles.icon}`}>{item.icon}</div>
                             </div>
-                            <div className={`green_text ${styles.icon}`}>{item.icon}</div>
-                        </div>
-                    );
-                })}
+                        );
+                    })}
+                </div>
             </div>
         </div>
     )
