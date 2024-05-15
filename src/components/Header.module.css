@@ -41,3 +41,49 @@
     border-radius: 7;
     padding: 1px 5px;
 }
+
+.hamburgerMenuDiv {
+    display: none;
+}
+
+.mobileNavDiv {
+    display: none;
+}
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+    .mainDiv {
+        padding: 5px 30px !important;
+        position: relative;
+    }
+
+    .navDiv {
+        display: none;
+    }
+
+    .leftDiv {
+        display: none;
+    }
+
+    .hamburgerMenuDiv {
+        display: block;
+    }
+
+    .hamburgerMenu {
+        color: #ffffff;
+        font-size: xx-large;
+    }
+
+    .mobileNavDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 30px !important;
+        z-index: 1;
+        animation: forwards;
+    }
+
+    .mobileNavLinksUl {
+        list-style-type: none;
+    }
+}
